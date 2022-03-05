@@ -3,6 +3,7 @@ import { Row, Col } from "antd";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NavLeft from "./components/NavLeft";
+import Home from "./pages/Home"
 import "./style/common.less";
 const admin = () => {
     return (
@@ -14,7 +15,7 @@ const admin = () => {
                 <Col span={20} className="main">
                     <Header />
                     <Row className="content">
-                        Content
+                        <Home />
                     </Row>
                     <Footer />
                 </Col>

@@ -13,7 +13,6 @@ const Index = () => {
     useEffect(() => {
         axios.get("https://devapi.qweather.com/v7/weather/now?location=101010100&key=62b40aa8f04f48f2bd1a227ece7af879").then((response) => {
             setWeather(response.data.now)
-            console.log(weather);
         })
     }, [])
     return (

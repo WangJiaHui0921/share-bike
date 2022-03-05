@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Menu } from "antd";
-import MenuConfig from "./../../config/menuConfig"
+import MenuConfig from "./../../config/menuConfig";
 import "./index.less"
 
 const Index = () => {

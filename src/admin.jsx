@@ -3,9 +3,9 @@ import { Row, Col } from "antd";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NavLeft from "./components/NavLeft";
-import Home from "./pages/Home"
 import "./style/common.less";
-const admin = () => {
+const Admin = (props) => {
+    console.log(props.children);
     return (
         <div>
             <Row className="container">
@@ -15,7 +15,7 @@ const admin = () => {
                 <Col span={20} className="main">
                     <Header />
                     <Row className="content">
-                        <Home />
+                        {props.children}
                     </Row>
                     <Footer />
                 </Col>
@@ -24,4 +24,4 @@ const admin = () => {
     );
 }
 
-export default admin;
+export default Admin;

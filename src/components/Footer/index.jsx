@@ -1,6 +1,6 @@
 import React from 'react';
 import "./index.less"
-const Index = () => {
+const Footer = () => {
     return (
         <div className="footer">
             版权所有：朗科&爱豆(推荐使用谷歌浏览器,可以获得更佳操作页面体验) 技术支持：爱豆
@@ -8,4 +8,4 @@ const Index = () => {
     );
 }
 
-export default Index;
+export default Footer;

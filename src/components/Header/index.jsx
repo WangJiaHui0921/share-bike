@@ -3,7 +3,7 @@ import { Row, Col } from "antd";
 import moment from "moment";
 import axios from 'axios';
 import "./index.less"
-const Index = () => {
+const Header = () => {
     let [time, setTime] = useState(moment().format('YYYY-MM-DD HH:mm:ss'))
     let [name, setName] = useState("爱豆")
     let [weather, setWeather] = useState({})
@@ -36,4 +36,4 @@ const Index = () => {
     );
 }
 
-export default Index;
+export default Header;

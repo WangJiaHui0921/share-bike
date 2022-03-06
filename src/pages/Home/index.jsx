@@ -1,5 +1,5 @@
 import "./index.less"
-const Index = () => {
+const Home = () => {
     return (
         <div className="home-wrap">
             欢迎登录爱豆后台管理系统
@@ -7,4 +7,4 @@ const Index = () => {
     );
 }
 
-export default Index;
+export default Home;

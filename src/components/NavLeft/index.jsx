@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Menu } from "antd";
+import { NavLink } from "react-router-dom";
 import MenuConfig from "./../../config/menuConfig";
 import "./index.less"
 
-const Index = () => {
+const NavLeft = () => {
     // 解构 Menu
     let { Item } = Menu;
 
@@ -20,7 +21,9 @@ const Index = () => {
                         {renderMenu(item.children)}
                     </Menu.SubMenu>
                 } else {
-                    return <Item key={item.key}>{item.title}</Item>
+                    return <Item key={item.key}>
+                        <NavLink to={item.key}>{item.title}</NavLink>
+                    </Item>
                 }
             })
         }
@@ -41,4 +44,4 @@ const Index = () => {
     );
 }
 
-export default Index;
+export default NavLeft;

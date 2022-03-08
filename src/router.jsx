@@ -6,6 +6,7 @@ import Modals from "./pages/Ui/modals";
 import Loadings from './pages/Ui/loadings';
 import Notifications from './pages/Ui/notifications';
 import Messages from "./pages/Ui/messages";
+import Tabs from "./pages/Ui/tabs";
 const Router = () => {
     return (
         <BrowserRouter>
@@ -18,6 +19,7 @@ const Router = () => {
                             <Route path="/ui/loadings" component={Loadings} />
                             <Route path="/ui/notification" component={Notifications} />
                             <Route path="/ui/messages" component={Messages} />
+                            <Route path="/ui/tabs" component={Tabs} />
                         </Admin>
                     } />
                 </Switch>

@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import NavLeft from "./components/NavLeft";
 import "./style/common.less";
 const Admin = (props) => {
-    console.log(props.children);
     return (
         <div>
             <Row className="container">

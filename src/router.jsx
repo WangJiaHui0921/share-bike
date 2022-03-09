@@ -9,7 +9,8 @@ import Messages from "./pages/Ui/messages";
 import Tabs from "./pages/Ui/tabs";
 import Gallery from './pages/Ui/gallerys';
 import Carousel from './pages/Ui/carousels';
-import Login from "./pages/Form/login"
+import Login from "./pages/Form/login";
+import Register from "./pages/Form/reg";
 const Router = () => {
     return (
         <BrowserRouter>
@@ -26,6 +27,7 @@ const Router = () => {
                             <Route path="/ui/gallery" component={Gallery} />
                             <Route path="/ui/carousel" component={Carousel} />
                             <Route path="/form/login" component={Login} />
+                            <Route path="/form/reg" component={Register} />
                         </Admin>
                     } />
                 </Switch>

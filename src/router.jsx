@@ -11,6 +11,7 @@ import Gallery from './pages/Ui/gallerys';
 import Carousel from './pages/Ui/carousels';
 import Login from "./pages/Form/login";
 import Register from "./pages/Form/reg";
+import Basic from "./pages/Table/basic";
 const Router = () => {
     return (
         <BrowserRouter>
@@ -28,6 +29,7 @@ const Router = () => {
                             <Route path="/ui/carousel" component={Carousel} />
                             <Route path="/form/login" component={Login} />
                             <Route path="/form/reg" component={Register} />
+                            <Route path="/table/basic" component={Basic} />
                         </Admin>
                     } />
                 </Switch>

@@ -7,7 +7,8 @@ import Loadings from './pages/Ui/loadings';
 import Notifications from './pages/Ui/notifications';
 import Messages from "./pages/Ui/messages";
 import Tabs from "./pages/Ui/tabs";
-import Gallery from './pages/Ui/gallery';
+import Gallery from './pages/Ui/gallerys';
+import Carousel from './pages/Ui/carousels';
 const Router = () => {
     return (
         <BrowserRouter>
@@ -22,6 +23,7 @@ const Router = () => {
                             <Route path="/ui/messages" component={Messages} />
                             <Route path="/ui/tabs" component={Tabs} />
                             <Route path="/ui/gallery" component={Gallery} />
+                            <Route path="/ui/carousel" component={Carousel} />
                         </Admin>
                     } />
                 </Switch>

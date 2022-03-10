@@ -12,6 +12,7 @@ import Carousel from './pages/Ui/carousels';
 import Login from "./pages/Form/login";
 import Register from "./pages/Form/reg";
 import Basic from "./pages/Table/basic";
+import High from "./pages/Table/high";
 const Router = () => {
     return (
         <BrowserRouter>
@@ -30,6 +31,7 @@ const Router = () => {
                             <Route path="/form/login" component={Login} />
                             <Route path="/form/reg" component={Register} />
                             <Route path="/table/basic" component={Basic} />
+                            <Route path="/table/high" component={High} />
                         </Admin>
                     } />
                 </Switch>

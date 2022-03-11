@@ -14,6 +14,7 @@ import Register from "./pages/Form/reg";
 import Basic from "./pages/Table/basic";
 import High from "./pages/Table/high";
 import City from "./pages/City";
+import Order from "./pages/Order";
 const Router = () => {
     return (
         <BrowserRouter>
@@ -34,6 +35,7 @@ const Router = () => {
                             <Route path="/table/basic" component={Basic} />
                             <Route path="/table/high" component={High} />
                             <Route path="/city" component={City} />
+                            <Route path="/order" component={Order} />
                         </Admin>
                     } />
                 </Switch>

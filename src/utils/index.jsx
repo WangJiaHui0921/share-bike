@@ -10,7 +10,7 @@ export default class Utils {
             showTotal: () => {
                 return `共 ${data.total} 条`
             },
-            showQuickJumper: true
+            // showQuickJumper: true
         }
     }
 }

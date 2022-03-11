@@ -166,6 +166,12 @@ const Order = () => {
         })
     }
 
+    // 订单详情功能
+    let handleOpenDetail = () => {
+        if (!selectedItem.id) return Modal.info({ title: "提示信息", content: "请选择一条订单" })
+        window.open(`/common/order/detail/${selectedItem.id}`)
+    }
+
     return (
         <div className="wrap">
             <Card className="wrap">
@@ -196,7 +202,7 @@ const Order = () => {
                 </Form>
             </Card>
             <Card>
-                <Button type="primary">订单详情</Button>
+                <Button type="primary" onClick={handleOpenDetail}>订单详情</Button>
                 <Button type="primary" onClick={handleFinish}>结束订单</Button>
             </Card>
             <Table

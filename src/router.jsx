@@ -15,11 +15,19 @@ import Basic from "./pages/Table/basic";
 import High from "./pages/Table/high";
 import City from "./pages/City";
 import Order from "./pages/Order";
+import Common from "./common";
+import Detail from "./pages/Order/detail";
 const Router = () => {
     return (
         <BrowserRouter>
             <App>
                 <Switch>
+                    <Route path="/common" render={() =>
+                        <Common>
+                            <Route path="/common/order/detail/:orderId" component={Detail} />
+                        </Common>
+                    }>
+                    </Route>
                     <Route path="/" render={() =>
                         <Admin>
                             <Route path="/ui/buttons" component={Buttons} />

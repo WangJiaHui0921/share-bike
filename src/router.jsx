@@ -17,7 +17,6 @@ import City from "./pages/City";
 import Order from "./pages/Order";
 import Common from "./common";
 import Detail from "./pages/Order/detail";
-import User from "./pages/User";
 const Router = () => {
     return (
         <BrowserRouter>
@@ -45,7 +44,6 @@ const Router = () => {
                             <Route path="/table/high" component={High} />
                             <Route path="/city" component={City} />
                             <Route path="/order" component={Order} />
-                            <Route path="/user" component={User} />
                         </Admin>
                     } />
                 </Switch>

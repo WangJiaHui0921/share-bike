@@ -19,6 +19,7 @@ import Common from "./common";
 import Detail from "./pages/Order/detail";
 import User from "./pages/User";
 import BikeMap from "./pages/BikeMap";
+import Bar from "./pages/ECharts/bar";
 const Router = () => {
     return (
         <BrowserRouter>
@@ -48,6 +49,7 @@ const Router = () => {
                             <Route path="/order" component={Order} />
                             <Route path="/user" component={User} />
                             <Route path="/bikeMap" component={BikeMap} />
+                            <Route path="/charts/bar" component={Bar} />
                         </Admin>
                     } />
                 </Switch>

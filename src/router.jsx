@@ -17,6 +17,8 @@ import City from "./pages/City";
 import Order from "./pages/Order";
 import Common from "./common";
 import Detail from "./pages/Order/detail";
+import User from "./pages/User";
+import BikeMap from "./pages/BikeMap";
 const Router = () => {
     return (
         <BrowserRouter>
@@ -44,6 +46,8 @@ const Router = () => {
                             <Route path="/table/high" component={High} />
                             <Route path="/city" component={City} />
                             <Route path="/order" component={Order} />
+                            <Route path="/user" component={User} />
+                            <Route path="/bikeMap" component={BikeMap} />
                         </Admin>
                     } />
                 </Switch>

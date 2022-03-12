@@ -20,6 +20,8 @@ import Detail from "./pages/Order/detail";
 import User from "./pages/User";
 import BikeMap from "./pages/BikeMap";
 import Bar from "./pages/ECharts/bar";
+import Pie from "./pages/ECharts/pie";
+import Line from "./pages/ECharts/line";
 const Router = () => {
     return (
         <BrowserRouter>
@@ -50,6 +52,8 @@ const Router = () => {
                             <Route path="/user" component={User} />
                             <Route path="/bikeMap" component={BikeMap} />
                             <Route path="/charts/bar" component={Bar} />
+                            <Route path="/charts/pie" component={Pie} />
+                            <Route path="/charts/line" component={Line} />
                         </Admin>
                     } />
                 </Switch>

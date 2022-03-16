@@ -22,6 +22,7 @@ import BikeMap from "./pages/BikeMap";
 import Bar from "./pages/ECharts/bar";
 import Pie from "./pages/ECharts/pie";
 import Line from "./pages/ECharts/line";
+import Rich from "./pages/rich";
 const Router = () => {
     return (
         <BrowserRouter>
@@ -54,6 +55,7 @@ const Router = () => {
                             <Route path="/charts/bar" component={Bar} />
                             <Route path="/charts/pie" component={Pie} />
                             <Route path="/charts/line" component={Line} />
+                            <Route path="/rich" component={Rich} />
                         </Admin>
                     } />
                 </Switch>

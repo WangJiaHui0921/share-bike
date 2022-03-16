@@ -1,10 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Card, Button, Select, DatePicker, Form } from "antd";
 import "./../../style/card.less";
 
 const BikeMap = () => {
+    let myRef = useRef(null)
 
-    let myForm;
 
     // 副作用
     useEffect(() => {
@@ -21,12 +21,13 @@ const BikeMap = () => {
 
     // 查询功能
     let handleQuery = () => {
+        console.log(myRef);
         renderMap()
     }
     return (
         <div className="wrap">
             <Card className="wrap">
-                <Form layout="inline" ref={c => myForm = c}>
+                <Form layout="inline" ref={myRef}>
                     <Form.Item name="city" label="城市" initialValue={1}>
                         <Select>
                             <Select.Option value={0}>全部</Select.Option>
